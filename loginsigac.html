@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SIGAC (sistemas integrado de gestao de atividades  complememtares)</title>
-<link rel="stylesheet" href="sigac.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>SIGAC - Sistema Integrado de Gestão de Atividades Complementares</title>
+
+    <link rel="stylesheet" href="sigac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    
+
+<!-- TOPO -->
 <nav class="barratopo">
-    <h2> Sigac </h2>
+    <h2>SIGAC</h2>
 
-<div class="menu-topo">
+    <div class="menu-topo">
+        <span><i class="fa-solid fa-user"></i> Usuário</span>
 
-    <span><i class="fa-solid fa-user"></i>Usuarios</span>
-    <div class="top-icons">
-    <div class="notificacao">
-    <i class="fa-solid fa-bell"></i>
-    <span class="badge"> 3 </span>
-
+        <div class="top-icons">
+            <div class="notificacao">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge">3</span>
+            </div>
         </div>
     </div>
-</div>
-   
-</nav> 
+</nav>
 
-<nav class="navbar"> 
-<h1>Bem vinsto ao sistema sigac</h1>
+<!-- MENSAGEM -->
+<header class="boas-vindas">
+    <h1>Bem-vindo ao sistema SIGAC</h1>
+</header>
 
-    <div class="conteine">
-    <aside class="siderbar">
-
-
-        </aside> 
-    </div>
-    </nav>
-
+<!-- LOGIN -->
 <div class="login-container">
-    <h1> Login </h1>
-    <form>
-        <input type="text" placeholder="Usuario" required>
-        <input type="password" placeholder="Senha" required>
+    <h1>Login</h1>
+
+    <form id="login-form">
+        <input type="text" id="usuario" placeholder="Usuário" required>
+        <input type="password" id="senha" placeholder="Senha" required>
 
         <button type="submit">Entrar</button>
     </form>
 </div>
 
+<footer> © 2026 Equipe DevTech. Todos os direitos reservados.
+Desenvolvido por:
+- Einstein I.B Neves 
+- Hilce Rocha
+- Guilheme Lucas
+- Arthur Da Cunha
+- Isaque Matheus
+- Grabriel 
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

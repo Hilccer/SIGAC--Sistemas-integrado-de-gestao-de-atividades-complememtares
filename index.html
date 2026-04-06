@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SIGAC (sistemas integrado de gestao de atividades  complememtares)</title>
-<link rel="stylesheet" href="sigac.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>SIGAC - Sistema Integrado de Gestão de Atividades Complementares</title>
+
+    <link rel="stylesheet" href="sigac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
+<header>
+    <!-- <img src="logo.png"> -->
+</header>
+
 <nav class="barratopo">
-    <h2> Sigac </h2>
+    <h2>SIGAC</h2>
 
-<div class="menu-topo">
+    <div class="menu-topo">
+        <span><i class="fa-solid fa-user"></i> Usuário</span>
 
-    <span><i class="fa-solid fa-user"></i>Usuario</span>
-    <div class="top-icons">
-    <div class="notificacao">
-    <i class="fa-solid fa-bell"></i>
-    <span class="badge"> 3 </span> <!-- hilcer precisar fazer a notificação no J.S-->
-
+        <div class="top-icons">
+            <div class="notificacao">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge">3</span>
+            </div>
         </div>
     </div>
-</div>
-   
-</nav> 
-<div class="conteine">
+</nav>
 
-  
-    <aside class="siderbar">
+<div class="container">
+
+    
+    <aside class="sidebar">
         <ul>
-            <li><a href="dachbord.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+            <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
             <li><a href="chat.html"><i class="fa-solid fa-comments"></i> Chat</a></li>
-            <li><a href="atribuições.html"><i class="fa-solid fa-file"></i>Atribuições </a></li>
+            <li><a href="atribuicoes.html"><i class="fa-solid fa-file"></i> Atribuições</a></li>
             <li><a href="calendario.html"><i class="fa-solid fa-calendar"></i> Calendário</a></li>
-            <li><a href="calendario.html"><i class="fa-solid fa-calendar"></i> Equipes</a></li>
-
-        </ul> 
+            <li><a href="equipes.html"><i class="fa-solid fa-users"></i> Equipes</a></li>
+        </ul>
     </aside>
 
-<!-- hilcer precisar colcoar no js as dicplinas novas . todas vao aparecer lado a lado como no teams cada uma 
-  precisar constar o nome da discplina  e o nome do  professor -->
-    <section class="diciplinas">
+    
+    <section class="disciplinas">
         <h2>Disciplinas</h2>
-        <div class="lista-disciplinas" id="lista-disciplinas">
-</div>
-
+        <div class="lista-disciplinas" id="lista-disciplinas"></div>
     </section>
 
+    <!-- ATIVIDADES -->
+    <main class="conteudo">
+        <h2>Atividades</h2>
+        <div id="lista-atividades" class="atividade-container"></div>
+    </main>
 
-<!-- hilce  as atividades vai ta relacionada com js . todos os que lancarem um curso ou atividade vai aparecer
-  no sino  de notificação  e sempre q um professor lancar vai aparecer  outra tela mostrando outra notificação 
-  como as atribuiçoes do teamns -->
-  
-<main class="conteudo"> 
-    <h2>atividades</h2>
-    <div id="lista-atividades" class="ativiudade-container"></div>   
-</main>
+</div>
+
 
 <div id="modal" class="modal hidden"> 
     <div class="modal-content">
-        <span id="fechar">&item;</span>
+        <span id="fechar">&times;</span>
         <h2 id="modal-titulo"></h2>
-        <p id="modal-descrição"></p>
-        <p><strong>Entregar</strong> <span id="modal-data"></span></p>
+        <p id="modal-descricao"></p>
+        <p><strong>Entregar:</strong> <span id="modal-data"></span></p>
         <input type="file" id="arquivo" />
-        <button id="enviar">Enviar Atividade </button>
+        <button id="enviar">Enviar Atividade</button>
     </div>
-    </div>
-
 </div>
 
-
-<main class="conteudo">
-    <h2></h2>
-</main>
-
-</div>
-</nav>
-
-
+<footer>
+    © 2026 Equipe DevTech. Todos os direitos reservados.<br>
+    Desenvolvido por:
+    Einstein, Hilce, Guilherme, Arthur, Isaque, Gabriel
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

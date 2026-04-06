@@ -3,89 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SIGAC (sistemas integrado de gestao de atividades  complememtares)</title>
-<link rel="stylesheet" href="sigac.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>SIGAC - Cadastro</title>
+
+    <link rel="stylesheet" href="sigac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <nav class="barratopo">
-    <h2> Sigac </h2>
+    <h2>SIGAC</h2>
 
-<div class="menu-topo">
+    <div class="menu-topo">
+        <span><i class="fa-solid fa-user"></i> Usuários</span>
 
-    <span><i class="fa-solid fa-user"></i>Usuarios</span>
-    <div class="top-icons">
-    <div class="notificacao">
-    <i class="fa-solid fa-bell"></i>
-    <span class="badge"> 3 </span>
-
+        <div class="top-icons">
+            <div class="notificacao">
+                <i class="fa-solid fa-bell"></i>
+                <span class="badge">3</span>
+            </div>
         </div>
     </div>
-</div>
-   
-</nav> 
-
-<nav class="navbar"> 
-            <h1>Bem vinsto ao sistema sigac</h1>
-
-
-<div class="CadastroAluno">
-    <H1>Cadastro do Novo Aluno </H1>
-    <form>
-
-                <h2> Dados pessoais </h2>
-        <input type="text"placeholder="Nome Completo" required>
-        <input type="date"placeholder="Data de Nascimento"required>
-        <input type="text"placeholder="CPF"required>
-
-        <select required>
-            <option value="">sexo</option>
-            <option>Masculino</option>
-           <option>Feminino</option>
-        </select>
- <input type="text"placeholder= "Telefone">
- <input type="email" placeholder="Email">
-
-                    <h3>Endereço</h3>
- <input type="text"placeholder="Rua">
- <input type="text"placeholder="Numero">
- <input type="text"placeholder="Bairro">
- <input type="text"placeholder="Cidade">
- <input type="text"placeholder="UF">
-
-                    <h4>Curso</h4>
-<select required>
-<option value="">escolha o curso</option>
-<option>Analise Desenvolvimento de Sistemas</option>
-<option>Design Gráfico</option>
-<option>Gestão Comercial</option>
-<option>Gestao de tecnologia da informação</option>
-<option>Gestao de recursos Humanos</option>
-<option>Gestao financeira</option>
-<option>Jogos Digitais </option>
-<option>Marketing</option>
-<option>Gestão de Redes Sociais</option>
-<option>Processos Gerenciais </option>
-</select>
-
-<select required>
-    <option value="">Turno</option>
-    <option> Manha </option>
-    <option> Tarde </option>
-    <option> Noite </option>
-</select>
-
-    </form>
-</div>
- 
-<main class="conteudo">
-    <h2></h2>
-</main>
-
-</div>
 </nav>
 
+<header class="navbar">
+    <h1>Bem-vindo ao sistema SIGAC</h1>
+</header>
+
+<section class="CadastroAluno">
+    <h1>Cadastro do Novo Aluno</h1>
+
+    <form id="form-cadastro">
+
+        <h2>Dados pessoais</h2>
+        <input type="text" name="nome" placeholder="Nome Completo" required>
+        <input type="date" name="nascimento" required>
+        <input type="text" name="cpf" placeholder="CPF" required>
+
+        <select name="sexo" required>
+            <option value="">Sexo</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+        </select>
+
+        <input type="text" name="telefone" placeholder="Telefone">
+        <input type="email" name="email" placeholder="Email" required>
+
+        <input type="password" name="senha" placeholder="Senha" required>
+
+        <h3>Endereço</h3>
+        <input type="text" name="rua" placeholder="Rua">
+        <input type="text" name="numero" placeholder="Número">
+        <input type="text" name="bairro" placeholder="Bairro">
+        <input type="text" name="cidade" placeholder="Cidade">
+        <input type="text" name="uf" placeholder="UF">
+
+        <h4>Curso</h4>
+        <select name="curso" required>
+            <option value="">Escolha o curso</option>
+            <option>ADS</option>
+            <option>Design Gráfico</option>
+            <option>Gestão Comercial</option>
+            <option>TI</option>
+            <option>RH</option>
+            <option>Financeiro</option>
+            <option>Jogos Digitais</option>
+            <option>Marketing</option>
+        </select>
+
+        <select name="turno" required>
+            <option value="">Turno</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</section>
+
+<footer>
+    © 2026 Equipe DevTech. Todos os direitos reservados.<br>
+    Desenvolvido por:
+    Einstein, Hilce, Guilherme, Arthur, Isaque, Gabriel
+</footer>
 
 <script src="script.js"></script>
 
